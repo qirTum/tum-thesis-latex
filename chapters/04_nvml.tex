@@ -1,0 +1,31 @@
+% !TeX root = ../main.tex
+% Add the above to each chapter to make compiling the PDF easier in some editors.
+
+\chapter{NVML Counters}\label{chapter:nvml}
+
+\section{Concept}
+- nvidia has hardware counters, accessible via nvml library
+- counters measure average bandwidth over the last 20ms, in kb/sec
+- Transmit and Receive have seperate counters
+
+\section{Implementation}
+- method call to read counters takes about 20ms
+- to increase data granularity and measurement consistency, measuring of TX and RX was done in parallel
+
+
+
+\section{Results}
+
+- graphs
+
+\section{Discussion}
+
+\subsection{successes}
+
+- measures bandwidths accurately to some degree
+- introduces little overhead (probably, still to be measured)
+
+
+\subsection{shortcomings}
+- granularity of method calls prevent more accurate readings -> short memory transfers may be not detected
+- black box approach of nvidia's source code doesn't allow for proper sanity-checking

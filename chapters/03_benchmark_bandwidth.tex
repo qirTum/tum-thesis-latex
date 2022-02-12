@@ -1,0 +1,29 @@
+% !TeX root = ../main.tex
+% Add the above to each chapter to make compiling the PDF easier in some editors.
+
+\chapter{Bandwidth Benchmark}\label{chapter:benchmark}
+
+\section{Concept}
+- Measures raw theoretical maximum bandwidth of pcie link by measuring the duration of memory copies of various chunk sizes
+- Checks at which chunk sizes the bandwidth of the link is fully saturated
+
+\section{Implementation}
+- Compensates for delay - 1 packet with 4B measured as delay
+- Pageable and pinned memory benchmarks measured
+- Warmup-feature: first transfer usually has some sort of longer delay, compensates for that (windows-finding, verify on p6000)
+
+\section{Results}
+- Transfer durations don’t really increase until 8kb
+- Due to the nature of the PCI-E packet having a max payload of 4kb
+- First transfer usually has a bit longer delay (warmup?)
+- On windows: not executable that calls functions, but rather nvcuda64.dll - requires compiling on windows and then using a profiling tool like AMDUprof to look at the program
+
+\section{Discussion}
+
+\subsection{successes}
+- gives accurate reading of pcie bandwidths 
+- non-linear scaling of packet transfer durations (2 packets does not equal double the duration of one packet)
+
+
+\subsection{shortcomings}
+- does not really compensate for other bottlenecks, as seen on time-x with gen4 link bandwidth speeds
