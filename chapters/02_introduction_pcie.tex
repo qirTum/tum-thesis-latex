@@ -1,8 +1,102 @@
-% !TeX root = ../main.tex
+%!TeX root = ../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
-\chapter{A Brief Summary of PCI-Express}\label{chapter:introduction_pcie}
+\chapter{Background}\label{chapter:Background}
 
-\section{Hardware}
+\section{PCI-Express}
+PCIe, or PCI-Express, shorthand for Peripheral Component Interconnect Express, 
 
-\section{Software}
+
+PCIe is designed to replace the ageing PCI (Peripheral Component Interconnect), PCI-X (Peripheral Component Interconnect Extended), and AGP (Accelerated Graphics Port) standards. [cite here: verma/dahiya] These standards are developed, defined, and maintained by the PCI-SIG group, which is a nonprofit organization with 800+ member companies based in Beaverton, Oregon. [cite here: pcisig page] This chapter will briefly introduce the key features and functionality of PCI-Express.
+
+\subsection{Key Features}
+
+\begin{itemize}
+\item host to device point-to-point connection
+\item serial bus
+\item full-duplex link - transmits to and from the device are handled seperately
+\item scalability of link - double link width equals double bandwidth
+\item backwards compatible with PCI
+\item same memory, i/o, config address space
+\item better error handling than PCI
+\item backwards compatible with previous PCIe generations
+\item theoretical maximum bandwidth of each generation of PCIe doubles
+\end{itemize}
+
+[note: further expand, cite sources, write text or enumeration?]
+
+\subsection{Functionality}
+
+\subsubsection{packet}
+PCIe, similar to IPv4 or IPv6, utilizes packets to communicate between the host - the CPU - and the device. As shown in figure [figure here], the packet consists of a few different elements, which will be further expanded upon below. 
+\begin{itemize}
+\item Start: this is the start component which signals the begin of a packet to the physical layer.
+\item Sequence: This two-byte sequence is used by the Data Link Layer to determine the sequence of the packets.
+\item Header: The 12 to 16 Byte header will be discussed in further detail in subsection [reference to header]. This component belongs to the Transaction layer.
+\item Payload: The PCIe payload. This is optional, however any memory transferred via memory copy operations will have the memory as payload. This also is a part of the Transaction layer.
+\item ECRC: a CRC code for error-checking purposes used by the transaction layer.
+\item LCRC: a CRC code for error-checking purposes used by the Data Link Layer.
+\end{itemize}
+
+
+\subsubsection{header}
+As with IPv4 or IPv6, PCI-Express uses headers to determine the purpose and target of each TLP (Transaction Layer Packet)
+However, instead of using IP-addresses, stored in the header, to determine the sender and the receiver, PCIe uses the Requester ID to determine the sender. The Address determines the receiver of the intended packet, as the device memory is memory-mapped into the host address domain to enable the processor's native load or store instructions to work with PCIe devices. [cite oracle website] Below is an example PCI-Express header [reference figure, insert graphic].
+
+As seen in [ref figure], the header comes with a set format, similar to an IPv4 or v6 header. The fields are briefly explained below.
+\begin{itemize}
+\item TC: Traffic Class: this denotes the priority of the packet, with ascending priority. [cite book]
+\item TD: The TLP Digest field. If TD is set to 1, it indicates that there is additional CRC data in the TLP data. [cite xillybus]
+\item Length: more or less self-explanatory: length denotes the length of the payload in Double Words. [cite xillybus]
+\item Requester ID: self-explanatory: the ID of the device that requested or sent the packet. [cite xillybus]
+\item Tag: The Tag field has the function of a tracking number, as for read requests, the device must copy this value to its response. All outstanding tags must be unique to ensure data integrity. [cite xillybus]
+\item DW BE fields: DW BE stands for Double-Word Byte Enable. This denotes which of the bytes in the first / last DWs are valid. [cite xillybus]
+\item Address: self-explanatory: The Address to which this packet is addressed, as explained above. Additionally, for read and write requests, this denotes the starting address of the read or write. [cite xillybus]
+\item The EP and Attr fields are not further elaborated upon as they are rarely used by PCIe endpoint devices. [cite xillybus]
+\end{itemize}
+
+
+
+[note: a lot of the specifications are unaccessible to me due to them being locked behind PCI SIG membership, so sources are difficult to find.]
+[note2: xillybus is a website source, not sure if it is safe to use. Link: http://xillybus.com/tutorials/pci-express-tlp-pcie-primer-tutorial-guide-1]
+
+\subsection{Topology and Communication}
+
+\begin{itemize}
+\item root complex
+\item 
+\end{itemize}
+
+\subsection{Revisions and Further Specifications}
+
+\begin{itemize}
+\item mention gen 5 and 6
+\item gen6 paper
+\item other formfactors: thunderbolt / nvm-express
+\end{itemize}
+
+\section{Graphics Processing Units}
+
+
+\subsection{What are GPUs}
+
+\begin{itemize}
+\item
+\end{itemize}
+
+
+\subsection{Why even use GPUs}
+
+\begin{itemize}
+\item
+\end{itemize}
+
+
+\section{CUDA}
+\begin{itemize}
+\item nvidia's programming-API
+\item closed-source
+\item offers way to communicate with nvidia GPUs
+\end{itemize}
+
+
