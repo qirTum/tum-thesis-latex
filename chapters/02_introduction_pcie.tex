@@ -3,10 +3,12 @@
 
 \chapter{Background}\label{chapter:Background}
 
+\section{HPC-node}
+
+TODO
+
 \section{PCI-Express}
-PCIe, or PCI-Express, shorthand for Peripheral Component Interconnect Express, 
-
-
+PCIe, or PCI-Express, shorthand for Peripheral Component Interconnect Express, is a "general-purpose serial I/O interconnect". [cite pciefaq] PCIe, as an interface, allows the CPU to connect with, as the name suggests, peripherals and components. [cite: pcmag] Common components and peripherals include, but are not limited to: Graphics cards, sound cards, video capture cards, WiFi cards, and storage. [cite: HP]
 PCIe is designed to replace the ageing PCI (Peripheral Component Interconnect), PCI-X (Peripheral Component Interconnect Extended), and AGP (Accelerated Graphics Port) standards. [cite here: verma/dahiya] These standards are developed, defined, and maintained by the PCI-SIG group, which is a nonprofit organization with 800+ member companies based in Beaverton, Oregon. [cite here: pcisig page] This chapter will briefly introduce the key features and functionality of PCI-Express.
 
 \subsection{Key Features}
@@ -14,13 +16,14 @@ PCIe is designed to replace the ageing PCI (Peripheral Component Interconnect), 
 \begin{itemize}
 \item host to device point-to-point connection
 \item serial bus
-\item full-duplex link - transmits to and from the device are handled seperately
+\item dual-simplex link - transmits to and from the device are handled seperately
 \item scalability of link - double link width equals double bandwidth
 \item backwards compatible with PCI
 \item same memory, i/o, config address space
 \item better error handling than PCI
 \item backwards compatible with previous PCIe generations
-\item theoretical maximum bandwidth of each generation of PCIe doubles
+\item theoretical maximum bandwidth of each generation of PCIe doubles, table
+
 \end{itemize}
 
 [note: further expand, cite sources, write text or enumeration?]
@@ -28,7 +31,14 @@ PCIe is designed to replace the ageing PCI (Peripheral Component Interconnect), 
 \subsection{Functionality}
 
 \subsubsection{packet}
-PCIe, similar to IPv4 or IPv6, utilizes packets to communicate between the host - the CPU - and the device. As shown in figure [figure here], the packet consists of a few different elements, which will be further expanded upon below. 
+PCIe, similar to IPv4 or IPv6, utilizes packets to communicate between the host - the CPU - and the device. As shown in figure \ref{fig:packet}, the packet consists of a few different elements, which will be further expanded upon below. 
+
+\begin{figure}
+\includegraphics[width = \linewidth]{figures/PCIE-packet}
+\caption{An example of a PCI-Express packet [cite source]}
+\label{fig:packet}
+\end{figure}
+
 \begin{itemize}
 \item Start: this is the start component which signals the begin of a packet to the physical layer.
 \item Sequence: This two-byte sequence is used by the Data Link Layer to determine the sequence of the packets.
@@ -41,11 +51,17 @@ PCIe, similar to IPv4 or IPv6, utilizes packets to communicate between the host 
 
 \subsubsection{header}
 As with IPv4 or IPv6, PCI-Express uses headers to determine the purpose and target of each TLP (Transaction Layer Packet)
-However, instead of using IP-addresses, stored in the header, to determine the sender and the receiver, PCIe uses the Requester ID to determine the sender. The Address determines the receiver of the intended packet, as the device memory is memory-mapped into the host address domain to enable the processor's native load or store instructions to work with PCIe devices. [cite oracle website] Below is an example PCI-Express header [reference figure, insert graphic].
+However, instead of using IP-addresses, stored in the header, to determine the sender and the receiver, PCIe uses the Requester ID to determine the sender. The Address determines the receiver of the intended packet, as the device memory is memory-mapped into the host address domain to enable the processor's native load or store instructions to work with PCIe devices. [cite oracle website] As seen in Figure \ref{fig:header}, the header has a fixed format, similar to an IPv4 or v6 header. The fields and their uses are briefly explained below.
 
-As seen in [ref figure], the header comes with a set format, similar to an IPv4 or v6 header. The fields are briefly explained below.
+\begin{figure}
+\includegraphics[width = \linewidth]{figures/PCIE-header}
+\caption{An example of a memory request header [cite source]}
+\label{fig:header}
+\end{figure}
+
+
 \begin{itemize}
-\item TC: Traffic Class: this denotes the priority of the packet, with ascending priority. [cite book]
+\item TC: Traffic Class: this denotes the priority of the packet. A larger value represents a higher priority. [cite book]
 \item TD: The TLP Digest field. If TD is set to 1, it indicates that there is additional CRC data in the TLP data. [cite xillybus]
 \item Length: more or less self-explanatory: length denotes the length of the payload in Double Words. [cite xillybus]
 \item Requester ID: self-explanatory: the ID of the device that requested or sent the packet. [cite xillybus]
@@ -62,9 +78,23 @@ As seen in [ref figure], the header comes with a set format, similar to an IPv4 
 
 \subsection{Topology and Communication}
 
+\subsubsection{Topology}
+There are four significant components to be mentioned when discussing the topology of a PCI-Express based system. PCIe endpoints, switches, bridges, and a root complex. 
+The communication between CPU cores and memory controllers to the PCIe endpoint is handled by the PCIe root complex. This communication can be routed through (but does not require) PCIe switches. PCIe switches allow for cascading connections, however do not benefit the total bandwidth, which is limited by the PCIe root complex in a CPU. [cite: nakamura et al] 
+Bridges are used to connect legacy PCI and PCI-X devices with the PCIe root complex. [cite: pciefaq]
+Figure [ref figure] shows an example PCIe configuration.
+
+\subsubsection{Memory Management}
+
+\subsubsection{Links and Lanes}
+
 \begin{itemize}
 \item root complex
-\item 
+\item graphic of topology
+\item memory management done by CPU after setup
+\item example packet travel to illustrate
+\item lane, link, link width (graphic)
+\item SIMT programming
 \end{itemize}
 
 \subsection{Revisions and Further Specifications}
@@ -81,22 +111,38 @@ As seen in [ref figure], the header comes with a set format, similar to an IPv4 
 \subsection{What are GPUs}
 
 \begin{itemize}
-\item
+\item disambiguation - GPU != Graphics Card
+\item processing units designed for parallel processing
+\item Graphics Card: own dedicated memory, PCIe Link, dedicated RAM for GPU, on PCB
+\item Integrated Graphics: GPU integrated with CPU
+\item 
 \end{itemize}
 
 
-\subsection{Why even use GPUs}
+\subsection{Uses of GPUs}
 
 \begin{itemize}
-\item
+\item In the past: only for real-time 3D graphics
+\item now: more or less general-purpose GPUs as accelerators for several different use-cases and workloads
+\item Gaming / Video Editing / Content Creation
+\item Machine Learning: Tensor cores [nvidia]
+\item raw compute performance for single-precision [arxiv paper]
+\item AI and HPC tasks here, do further research (?)
 \end{itemize}
 
+\subsection{memory structure}
+
+- further research needed
 
 \section{CUDA}
 \begin{itemize}
 \item nvidia's programming-API
 \item closed-source
-\item offers way to communicate with nvidia GPUs
+\item offers way for the CPU to communicate with and to program nvidia GPUs
+\item use the .cu extension, called kernels (why? not sure.)
+\item features: memory management, data movement, etc. -> subsection?
+\item more features: Libraries for several different features such as linear algebra, signal processing, image processing [cuda11 features nvidia]
+\item CUDA is the preferred API for this thesis (reasons?)
 \end{itemize}
 
 
