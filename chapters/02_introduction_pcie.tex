@@ -5,7 +5,9 @@
 
 \section{HPC-node}
 
-TODO
+- consists of CPU, RAM, GPU, storage, etc.
+- cpu has multiple cores and threads
+- in short: a PC
 
 \section{PCI-Express}
 PCIe, or PCI-Express, shorthand for Peripheral Component Interconnect Express, is a "general-purpose serial I/O interconnect". [cite pciefaq] PCIe, as an interface, allows the CPU to connect with, as the name suggests, peripherals and components. [cite: pcmag] Common components and peripherals include, but are not limited to: Graphics cards, sound cards, video capture cards, WiFi cards, and storage. [cite: HP]
@@ -13,20 +15,10 @@ PCIe is designed to replace the ageing PCI (Peripheral Component Interconnect), 
 
 \subsection{Key Features}
 
-\begin{itemize}
-\item host to device point-to-point connection
-\item serial bus
-\item dual-simplex link - transmits to and from the device are handled seperately
-\item scalability of link - double link width equals double bandwidth
-\item backwards compatible with PCI
-\item same memory, i/o, config address space
-\item better error handling than PCI
-\item backwards compatible with previous PCIe generations
-\item theoretical maximum bandwidth of each generation of PCIe doubles, table
+PCI-Express is, at its core, a serialized, point-to-point connection that is designed to be processor agnostic, scalable, and backwards compatible with PCI.[cite: lawley] [cite: pciefaq] [cite: pcisig] PCI-Express utilizes a dual-simplex connection to facilitate sending and receiving information concurrently. Additionally, to ensure backwards compatibility with PCI, PCI-Express shares the same memory configuration as PCI, which will be elaborated further upon in section [ref: section]. Further key features include better error handling and data integrity capabilities. [verma] To future-proof the standard, future generations of PCIe are to be designed to be compatible with current PCIe standards. [pcisig site] So far, each generation of PCIe doubled the previous generation's theoretical maximum bandwidth, as seen in table [ref: table]
 
-\end{itemize}
+[table here]
 
-[note: further expand, cite sources, write text or enumeration?]
 
 \subsection{Functionality}
 
@@ -82,19 +74,30 @@ However, instead of using IP-addresses, stored in the header, to determine the s
 There are four significant components to be mentioned when discussing the topology of a PCI-Express based system. PCIe endpoints, switches, bridges, and a root complex. 
 The communication between CPU cores and memory controllers to the PCIe endpoint is handled by the PCIe root complex. This communication can be routed through (but does not require) PCIe switches. PCIe switches allow for cascading connections, however do not benefit the total bandwidth, which is limited by the PCIe root complex in a CPU. [cite: nakamura et al] 
 Bridges are used to connect legacy PCI and PCI-X devices with the PCIe root complex. [cite: pciefaq]
-Figure [ref figure] shows an example PCIe configuration.
+Figure \ref{fig:topology} shows an example PCIe configuration of an Intel-based processor.
 
+\begin{figure}
+\includegraphics[width = \linewidth]{figures/PCIE-topology}
+\caption{PCIe configuration on an Intel-based system [cite source]}
+\label{fig:topology}
+\end{figure}
 \subsubsection{Memory Management}
+
+The PCIe memory structure is, due to compatibility reasons, the same as the memory structure found in the older PCI standard. This divides the device memory into three major parts for addressing: [cite: book]
+\begin{itemize}
+\item Configuration
+\item Memory
+\item IO
+\end{itemize}
+
+The configuration address space enables software to both identify and correctly configure the device, and is defined by its bus number and device number. [cite: oracle]
+The memory address space is where the storage and registers of a PCIe device is mapped. [cite: book] This memory space is also memory-mapped to the host address domain for ease of access by the CPU. [cite: oracle] 
+The IO address space is a place dedicated to accessing the internal registers / storage of a PCIe or PCI device. However, this is mostly deprecated in PCIe as the internal registers and storage of said devices are simply mapped into the memory address space instead. It is now common practice to map the same set of registers in both memory and IO address space. The PCIe specification discourages use of the IO space, which indicates that it remains here solely for legacy support purposes. [cite: book]
 
 \subsubsection{Links and Lanes}
 
 \begin{itemize}
-\item root complex
-\item graphic of topology
-\item memory management done by CPU after setup
-\item example packet travel to illustrate
 \item lane, link, link width (graphic)
-\item SIMT programming
 \end{itemize}
 
 \subsection{Revisions and Further Specifications}
@@ -109,17 +112,11 @@ Figure [ref figure] shows an example PCIe configuration.
 
 
 \subsection{What are GPUs}
-
-\begin{itemize}
-\item disambiguation - GPU != Graphics Card
-\item processing units designed for parallel processing
-\item Graphics Card: own dedicated memory, PCIe Link, dedicated RAM for GPU, on PCB
-\item Integrated Graphics: GPU integrated with CPU
-\item 
-\end{itemize}
-
+To begin with, it should be noted that the term graphics processing unit (GPU) does not equate to a graphics card. A GPU is a specialized processing unit primarily designed for parallel processing and accelerating workloads that require parallel processing. [cite: intel] A graphics card, on the other hand, is the add-in card that features a PCI-Express link to facilitate communication between CPU and GPU, dedicated memory and power delivery for the GPU, and the GPU itself. It should also be noted that the graphics card usually has its own dedicated PCB. There are also integrated GPUs, which can be embedded alongside the CPU.  These integrated GPUs are usually less powerful compared to discrete GPUs. [cite: intel]
 
 \subsection{Uses of GPUs}
+
+GPUs originally began as, as their names suggest, dedicated graphics accelerators
 
 \begin{itemize}
 \item In the past: only for real-time 3D graphics
@@ -130,11 +127,18 @@ Figure [ref figure] shows an example PCIe configuration.
 \item AI and HPC tasks here, do further research (?)
 \end{itemize}
 
-\subsection{memory structure}
+\subsection{GPU Memory}
 
-- further research needed
+- same addressing as other pcie endpoints [ref section]
+- faster VRAM and higher bandwidths compared to main memory
+-
 
 \section{CUDA}
+
+CUDA is a closed source API developed and maintained by Nvidia for use with their GPUs and graphics cards. 
+
+\subsection{Features}
+
 \begin{itemize}
 \item nvidia's programming-API
 \item closed-source
