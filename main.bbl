@@ -1,0 +1,841 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{ibm_what_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cbf44511d041dc6d1dd73cc0c033122c}{%
+           family={{IBM}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{fullhash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{bibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorbibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authornamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorfullhash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{High-performance computing ({HPC}) technology harnesses the power of supercomputers or computer clusters to solve complex problems requiring massive computation.}
+      \field{langid}{english}
+      \field{shorttitle}{What is {HPC}?}
+      \field{title}{What is {HPC}? Introduction to high-performance computing {|} {IBM}}
+      \field{urlday}{20}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Ruili\\Zotero\\storage\\9WSBARRY\\hpc.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ibm.com/topics/hpc
+      \endverb
+      \verb{url}
+      \verb https://www.ibm.com/topics/hpc
+      \endverb
+    \endentry
+    \entry{iowa_state_university_what_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a75180d838f008197e803bb0cf9343dd}{%
+           family={University},
+           familyi={U\bibinitperiod},
+           given={Iowa\bibnamedelima State},
+           giveni={I\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a75180d838f008197e803bb0cf9343dd}
+      \strng{fullhash}{a75180d838f008197e803bb0cf9343dd}
+      \strng{bibnamehash}{a75180d838f008197e803bb0cf9343dd}
+      \strng{authorbibnamehash}{a75180d838f008197e803bb0cf9343dd}
+      \strng{authornamehash}{a75180d838f008197e803bb0cf9343dd}
+      \strng{authorfullhash}{a75180d838f008197e803bb0cf9343dd}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What is an {HPC} cluster {|} High Performance Computing}
+      \field{urlday}{20}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb What is an HPC cluster | High Performance Computing:C\:\\Users\\Ruili\\Zotero\\storage\\V39FJFE3\\what-is-an-hpc-cluster.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.hpc.iastate.edu/guides/introduction-to-hpc-clusters/what-is-an-hpc-cluster
+      \endverb
+      \verb{url}
+      \verb https://www.hpc.iastate.edu/guides/introduction-to-hpc-clusters/what-is-an-hpc-cluster
+      \endverb
+    \endentry
+    \entry{pci-sig_pci_2011}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=908a7bac72fb2e83f17702bcac0c611c}{%
+           family={{PCI}-{SIG}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{908a7bac72fb2e83f17702bcac0c611c}
+      \strng{fullhash}{908a7bac72fb2e83f17702bcac0c611c}
+      \strng{bibnamehash}{908a7bac72fb2e83f17702bcac0c611c}
+      \strng{authorbibnamehash}{908a7bac72fb2e83f17702bcac0c611c}
+      \strng{authornamehash}{908a7bac72fb2e83f17702bcac0c611c}
+      \strng{authorfullhash}{908a7bac72fb2e83f17702bcac0c611c}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{17}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{title}{{PCI} Express Architecture Frequently Asked Questions}
+      \field{urlday}{17}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb PDF Snapshot:C\:\\Users\\Ruili\\Zotero\\storage\\SLJN9WPT\\2011 - Wayback Machine.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://web.archive.org/web/20110917001426/http://www.pcisig.com/news_room/faqs/faq_express/pciexpress_faq.pdf
+      \endverb
+      \verb{url}
+      \verb https://web.archive.org/web/20110917001426/http://www.pcisig.com/news_room/faqs/faq_express/pciexpress_faq.pdf
+      \endverb
+    \endentry
+    \entry{pcmag_definition_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7d774745637c28274c5250580da08ba8}{%
+           family={{PCMAG}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{7d774745637c28274c5250580da08ba8}
+      \strng{fullhash}{7d774745637c28274c5250580da08ba8}
+      \strng{bibnamehash}{7d774745637c28274c5250580da08ba8}
+      \strng{authorbibnamehash}{7d774745637c28274c5250580da08ba8}
+      \strng{authornamehash}{7d774745637c28274c5250580da08ba8}
+      \strng{authorfullhash}{7d774745637c28274c5250580da08ba8}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{What does {PCI} Express actually mean? Find out inside {PCMag}'s comprehensive tech and computer-related encyclopedia.}
+      \field{langid}{english}
+      \field{title}{Definition of {PCI} Express}
+      \field{titleaddon}{{PCMAG}}
+      \field{urlday}{17}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Ruili\\Zotero\\storage\\YDNLJDQC\\pci-express.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.pcmag.com/encyclopedia/term/pci-express
+      \endverb
+      \verb{url}
+      \verb https://www.pcmag.com/encyclopedia/term/pci-express
+      \endverb
+    \endentry
+    \entry{verma_pcie_2017}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fea0d86ba5d195f213637521a3375a93}{%
+           family={Verma},
+           familyi={V\bibinitperiod},
+           given={Anuj},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cdfea486ac102566ff88aab426e8f2a7}{%
+           family={Dahiya},
+           familyi={D\bibinitperiod},
+           given={Pawan},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6221a7b24f99eda8ba0a87249342b926}
+      \strng{fullhash}{6221a7b24f99eda8ba0a87249342b926}
+      \strng{bibnamehash}{6221a7b24f99eda8ba0a87249342b926}
+      \strng{authorbibnamehash}{6221a7b24f99eda8ba0a87249342b926}
+      \strng{authornamehash}{6221a7b24f99eda8ba0a87249342b926}
+      \strng{authorfullhash}{6221a7b24f99eda8ba0a87249342b926}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{12}
+      \field{journaltitle}{{IOSR} Journal of {VLSI} and Signal Processing ({IOSR}-{JVSP})}
+      \field{month}{7}
+      \field{shortjournal}{{IOSR} Journal of {VLSI} and Signal Processing ({IOSR}-{JVSP})}
+      \field{shorttitle}{{PCIe} {BUS}}
+      \field{title}{{PCIe} {BUS}: A State-of-the-Art-Review}
+      \field{volume}{7}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{24\bibrangedash 28}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.9790/4200-0704012428
+      \endverb
+      \verb{file}
+      \verb Full Text:C\:\\Users\\Ruili\\Zotero\\storage\\SI4GT7BG\\Verma and Dahiya - 2017 - PCIe BUS A State-of-the-Art-Review.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{pci-sig_contact_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=908a7bac72fb2e83f17702bcac0c611c}{%
+           family={{PCI}-{SIG}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{908a7bac72fb2e83f17702bcac0c611c}
+      \strng{fullhash}{908a7bac72fb2e83f17702bcac0c611c}
+      \strng{bibnamehash}{908a7bac72fb2e83f17702bcac0c611c}
+      \strng{authorbibnamehash}{908a7bac72fb2e83f17702bcac0c611c}
+      \strng{authornamehash}{908a7bac72fb2e83f17702bcac0c611c}
+      \strng{authorfullhash}{908a7bac72fb2e83f17702bcac0c611c}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Contact Us {|} {PCI}-{SIG}}
+      \field{urlday}{14}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Contact Us | PCI-SIG:C\:\\Users\\Ruili\\Zotero\\storage\\H2N97NMH\\contact-us.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://pcisig.com/membership/contact-us
+      \endverb
+      \verb{url}
+      \verb https://pcisig.com/membership/contact-us
+      \endverb
+    \endentry
+    \entry{lawley_understanding_2014}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=af75ceef05f4c62e815e3c0471aa7ae8}{%
+           family={Lawley},
+           familyi={L\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{af75ceef05f4c62e815e3c0471aa7ae8}
+      \strng{fullhash}{af75ceef05f4c62e815e3c0471aa7ae8}
+      \strng{bibnamehash}{af75ceef05f4c62e815e3c0471aa7ae8}
+      \strng{authorbibnamehash}{af75ceef05f4c62e815e3c0471aa7ae8}
+      \strng{authornamehash}{af75ceef05f4c62e815e3c0471aa7ae8}
+      \strng{authorfullhash}{af75ceef05f4c62e815e3c0471aa7ae8}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Understanding Performance of {PCI} Express Systems}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{16}
+      \range{pages}{1}
+      \verb{file}
+      \verb Lawley - 2014 - Understanding Performance of PCI Express Systems.pdf:C\:\\Users\\Ruili\\Zotero\\storage\\D7K9G7KI\\Lawley - 2014 - Understanding Performance of PCI Express Systems.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{pci-sig_membership_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=908a7bac72fb2e83f17702bcac0c611c}{%
+           family={{PCI}-{SIG}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{908a7bac72fb2e83f17702bcac0c611c}
+      \strng{fullhash}{908a7bac72fb2e83f17702bcac0c611c}
+      \strng{bibnamehash}{908a7bac72fb2e83f17702bcac0c611c}
+      \strng{authorbibnamehash}{908a7bac72fb2e83f17702bcac0c611c}
+      \strng{authornamehash}{908a7bac72fb2e83f17702bcac0c611c}
+      \strng{authorfullhash}{908a7bac72fb2e83f17702bcac0c611c}
+      \field{extraname}{3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Membership {|} {PCI}-{SIG}}
+      \field{urlday}{14}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Membership | PCI-SIG:C\:\\Users\\Ruili\\Zotero\\storage\\G4K86VBH\\membership.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://pcisig.com/membership
+      \endverb
+      \verb{url}
+      \verb https://pcisig.com/membership
+      \endverb
+    \endentry
+    \entry{jackson_pci_2012}{book}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=daa63133d2ad3a496058cf68d7adb0ec}{%
+           family={Jackson},
+           familyi={J\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ac351a2d80dc7def5a24e7b120aebe4}{%
+           family={Budruk},
+           familyi={B\bibinitperiod},
+           given={Ravi},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee8c290b24fb4efa0f2da4ab0b600c0f}{%
+           family={Winkles},
+           familyi={W\bibinitperiod},
+           given={Joe},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a815867e554f08bd60ff36192a281acb}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Don},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Monument, Colo.}%
+      }
+      \list{publisher}{1}{%
+        {MindShare}%
+      }
+      \strng{namehash}{e1f54c04db2d1d227b816f8ad57f349c}
+      \strng{fullhash}{e1f54c04db2d1d227b816f8ad57f349c}
+      \strng{bibnamehash}{e1f54c04db2d1d227b816f8ad57f349c}
+      \strng{authorbibnamehash}{e1f54c04db2d1d227b816f8ad57f349c}
+      \strng{authornamehash}{e1f54c04db2d1d227b816f8ad57f349c}
+      \strng{authorfullhash}{e1f54c04db2d1d227b816f8ad57f349c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{1st ed}
+      \field{isbn}{978-0-9770878-6-0}
+      \field{note}{{OCLC}: ocn824814290}
+      \field{pagetotal}{986}
+      \field{series}{{MindShare} technology series}
+      \field{shorttitle}{{PCI} Express technology}
+      \field{title}{{PCI} Express technology: comprehensive guide to generations 1.x, 2.x, 3.0}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Jackson and Budruk - PCI Express Technology.pdf:C\:\\Users\\Ruili\\Zotero\\storage\\4D2UVV8F\\Jackson and Budruk - PCI Express Technology.pdf:application/pdf
+      \endverb
+      \keyw{Buses,Computer architecture,Microcomputers}
+    \endentry
+    \entry{oracle_inc_pci_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=45dd94b15eacd95d9a90f834b157321d}{%
+           family={Oracle},
+           familyi={O\bibinitperiod},
+           given={Inc.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{45dd94b15eacd95d9a90f834b157321d}
+      \strng{fullhash}{45dd94b15eacd95d9a90f834b157321d}
+      \strng{bibnamehash}{45dd94b15eacd95d9a90f834b157321d}
+      \strng{authorbibnamehash}{45dd94b15eacd95d9a90f834b157321d}
+      \strng{authornamehash}{45dd94b15eacd95d9a90f834b157321d}
+      \strng{authorfullhash}{45dd94b15eacd95d9a90f834b157321d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{PCI} Address Domain - Oracle Documentation}
+      \field{urlday}{14}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb https\://docs.oracle.com/cd/E19253-01/816-4854/hwovr-25/index.html:C\:\\Users\\Ruili\\Zotero\\storage\\UVV7J8Y8\\index.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://docs.oracle.com/cd/E19253-01/816-4854/hwovr-25/index.html
+      \endverb
+      \verb{url}
+      \verb https://docs.oracle.com/cd/E19253-01/816-4854/hwovr-25/index.html
+      \endverb
+    \endentry
+    \entry{nakamura_thorough_2017}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=421c9fb2b2956b2f908a732089a4b957}{%
+           family={Nakamura},
+           familyi={N\bibinitperiod},
+           given={Hiroki},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b446367d262ece300ae2226bc6049ad}{%
+           family={Takayama},
+           familyi={T\bibinitperiod},
+           given={Hirotaka},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2a3f458dbb3ed94f9c0be22e0172e279}{%
+           family={Yamaguchi},
+           familyi={Y\bibinitperiod},
+           given={Yoshiki},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bf523aa50dc27e2a63c6b5af844c94a3}{%
+           family={Boku},
+           familyi={B\bibinitperiod},
+           given={Taisuke},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f97d4cc661afd22d077b3d5abfdd1f09}
+      \strng{fullhash}{f97d4cc661afd22d077b3d5abfdd1f09}
+      \strng{bibnamehash}{f97d4cc661afd22d077b3d5abfdd1f09}
+      \strng{authorbibnamehash}{f97d4cc661afd22d077b3d5abfdd1f09}
+      \strng{authornamehash}{f97d4cc661afd22d077b3d5abfdd1f09}
+      \strng{authorfullhash}{f97d4cc661afd22d077b3d5abfdd1f09}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article tries a thorough analysis from the physical layer to the transaction layer on {PCIe} Gen3 communication by using {FPGAs}. First, this article shows the performance variation of {PCIe} Gen3 throughput on several system configurations with {FPGAs}. Through the experiment using four kinds of chipsets, eight types of motherboards, and three kinds of {FPGAs}, the performance degradation was about eight percents and fifteen percents in the identical system configurations and different system configurations, respectively. Second, this paper tried to unveil the reason why the performance decreases and to identify where the bottleneck is. The eye scan can investigate the signal quality of a link. Although the comparison of eys-scan results could explain the reason why {PCIe} performance degraded, it did not become the primary reason for {PCIe} performance variance. Then, by the use of a protocol analyzer, this article tried to find out the problem in {PCIe} packets. It found an unintended partitioned transaction, and this seemed to be a significant factor that reduces {PCIe} throughput. Lastly, this article confirms the reason for performance degradation and the performance degradation was organized quantitatively.}
+      \field{booktitle}{2017 International Conference on {ReConFigurable} Computing and {FPGAs} ({ReConFig})}
+      \field{eventtitle}{2017 International Conference on {ReConFigurable} Computing and {FPGAs} ({ReConFig})}
+      \field{month}{12}
+      \field{title}{Thorough analysis of {PCIe} Gen3 communication}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/RECONFIG.2017.8279824
+      \endverb
+      \verb{file}
+      \verb IEEE Xplore Full Text PDF:C\:\\Users\\Ruili\\Zotero\\storage\\WJL63T2I\\Nakamura et al. - 2017 - Thorough analysis of PCIe Gen3 communication.pdf:application/pdf;IEEE Xplore Abstract Record:C\:\\Users\\Ruili\\Zotero\\storage\\3YGR74K4\\8279824.html:text/html
+      \endverb
+      \keyw{Bridges,Central Processing Unit,Field programmable gate arrays,Physical layer,Protocols,Standards,Throughput}
+    \endentry
+    \entry{budruk_pci_2014}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2ac351a2d80dc7def5a24e7b120aebe4}{%
+           family={Budruk},
+           familyi={B\bibinitperiod},
+           given={Ravi},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2ac351a2d80dc7def5a24e7b120aebe4}
+      \strng{fullhash}{2ac351a2d80dc7def5a24e7b120aebe4}
+      \strng{bibnamehash}{2ac351a2d80dc7def5a24e7b120aebe4}
+      \strng{authorbibnamehash}{2ac351a2d80dc7def5a24e7b120aebe4}
+      \strng{authornamehash}{2ac351a2d80dc7def5a24e7b120aebe4}
+      \strng{authorfullhash}{2ac351a2d80dc7def5a24e7b120aebe4}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{title}{{PCI} Express Basics}
+      \field{urlday}{19}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Ruili\\Zotero\\storage\\E9YGNDWN\\get_document.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://web.archive.org/web/20140715120034/http://www.pcisig.com/developers/main/training_materials/get_document?doc_id=4e00a39acaa5c5a8ee44ebb07baba982e5972c67
+      \endverb
+      \verb{url}
+      \verb https://web.archive.org/web/20140715120034/http://www.pcisig.com/developers/main/training_materials/get_document?doc_id=4e00a39acaa5c5a8ee44ebb07baba982e5972c67
+      \endverb
+    \endentry
+    \entry{sharma_pci_2020}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d6d1086fb42b79e900bdad59afb8d1bf}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Debendra\bibnamedelima Das},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d6d1086fb42b79e900bdad59afb8d1bf}
+      \strng{fullhash}{d6d1086fb42b79e900bdad59afb8d1bf}
+      \strng{bibnamehash}{d6d1086fb42b79e900bdad59afb8d1bf}
+      \strng{authorbibnamehash}{d6d1086fb42b79e900bdad59afb8d1bf}
+      \strng{authornamehash}{d6d1086fb42b79e900bdad59afb8d1bf}
+      \strng{authorfullhash}{d6d1086fb42b79e900bdad59afb8d1bf}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{{PCI} Express® ({PCIe}®) specification doubles the data rate every generation in a backwards compatible manner every three years. With {PCIe} 6.0 specification at 64.0 {GT}/s, we will be adopting {PAM}-4 signaling to ensure the channel reach remains the same as {PCIe} 5.0 specification at 32.0 {GT}/s. {PAM}-4 requires a Forward Error Correction ({FEC}) mechanism due to the high {BER}. However, since {PCIe} technology is a Load-Store architecture, the latency adder due to {FEC} must be less than 10ns and ideally 0. We present the new flit-based approach with a light-weight low-latency {FEC} coupled with a low-latency link level retry mechanism. We demonstrate that {PCIe} 6.0 architecture improves the bandwidth efficiency in the range of 0.95 to 1.4, resulting in a net bandwidth increase of 1.9X to 2.8X, depending on the payload size of the packets, in spite of the {FEC} and {CRC} overheads. The latency also decreases in most cases. The reliability ({FIT}) of our approach is demonstrated to less than 10-9. We also present a new power savings strategy that results in power consumption proportional to bandwidth usage without impacting the traffic flow.}
+      \field{booktitle}{2020 {IEEE} Symposium on High-Performance Interconnects ({HOTI})}
+      \field{eventtitle}{2020 {IEEE} Symposium on High-Performance Interconnects ({HOTI})}
+      \field{month}{8}
+      \field{note}{{ISSN}: 2332-5569}
+      \field{shorttitle}{{PCI} Express® 6.0 Specification at 64.0 {GT}/s with {PAM}-4 signaling}
+      \field{title}{{PCI} Express® 6.0 Specification at 64.0 {GT}/s with {PAM}-4 signaling: a low latency, high bandwidth, high reliability and cost-effective interconnect}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/HOTI51249.2020.00016
+      \endverb
+      \verb{file}
+      \verb IEEE Xplore Full Text PDF:C\:\\Users\\Ruili\\Zotero\\storage\\TTYDREZH\\Sharma - 2020 - PCI Express® 6.0 Specification at 64.0 GTs with P.pdf:application/pdf;IEEE Xplore Abstract Record:C\:\\Users\\Ruili\\Zotero\\storage\\PFIHABQX\\9188289.html:text/html
+      \endverb
+      \keyw{Bandwidth,Availability,{BER},Bit error rate,Correlation,{DUE},Encoding,{FIT},Forward error correction,Measurement,{PCI}-Express,Power-Efficiency,Reliability,Replay,Retrain,{SDC}}
+    \endentry
+    \entry{intel_product_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ff97a9fdede09eaf6e1c8ec9f6a61dd5}{%
+           family={Intel},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
+      \strng{fullhash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
+      \strng{bibnamehash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
+      \strng{authorbibnamehash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
+      \strng{authornamehash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
+      \strng{authorfullhash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{quick reference guide including specifications, features, pricing, compatibility, design documentation, ordering codes, spec codes and more.}
+      \field{langid}{english}
+      \field{title}{Product Specifications - i9 12900k}
+      \field{urlday}{20}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Ruili\\Zotero\\storage\\B3MXRGWE\\intel-core-i912900k-processor-30m-cache-up-to-5-20-ghz.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.intel.com/content/www/us/en/products/sku/134599/intel-core-i912900k-processor-30m-cache-up-to-5-20-ghz.html
+      \endverb
+      \verb{url}
+      \verb https://www.intel.com/content/www/us/en/products/sku/134599/intel-core-i912900k-processor-30m-cache-up-to-5-20-ghz.html
+      \endverb
+    \endentry
+    \entry{intel_what_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ff97a9fdede09eaf6e1c8ec9f6a61dd5}{%
+           family={Intel},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
+      \strng{fullhash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
+      \strng{bibnamehash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
+      \strng{authorbibnamehash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
+      \strng{authornamehash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
+      \strng{authorfullhash}{ff97a9fdede09eaf6e1c8ec9f6a61dd5}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Find out what a {GPU} is, how they work, and their uses for parallel processing with a definition and description of graphics processing units.}
+      \field{langid}{english}
+      \field{shorttitle}{What Is a {GPU}?}
+      \field{title}{What Is a {GPU}? Graphics Processing Units Defined}
+      \field{titleaddon}{Intel}
+      \field{urlday}{15}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Ruili\\Zotero\\storage\\Z3STLWK3\\what-is-a-gpu.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html
+      \endverb
+      \verb{url}
+      \verb https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html
+      \endverb
+    \endentry
+    \entry{kingston_understanding_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3303f645b1c5a2bb4d36ab1be910714b}{%
+           family={Kingston},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{3303f645b1c5a2bb4d36ab1be910714b}
+      \strng{fullhash}{3303f645b1c5a2bb4d36ab1be910714b}
+      \strng{bibnamehash}{3303f645b1c5a2bb4d36ab1be910714b}
+      \strng{authorbibnamehash}{3303f645b1c5a2bb4d36ab1be910714b}
+      \strng{authornamehash}{3303f645b1c5a2bb4d36ab1be910714b}
+      \strng{authorfullhash}{3303f645b1c5a2bb4d36ab1be910714b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{What is M.2? What is {NVMe}? How are these related to {SATA}, {AHCI} and what is the speed difference? We break down each acronym in our infographic to help you better understand how and why the latest {SSD} technology is faster and better.}
+      \field{langid}{english}
+      \field{shorttitle}{Understanding {SSD} Technology}
+      \field{title}{Understanding {SSD} Technology: {NVMe}, {SATA}, M.2 - Kingston Technology}
+      \field{titleaddon}{Kingston Technology Company}
+      \field{urlday}{20}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Ruili\\Zotero\\storage\\PLP3C89V\\48543.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.kingston.com/germany/en/community/articledetail/articleid/48543
+      \endverb
+      \verb{url}
+      \verb https://www.kingston.com/germany/en/community/articledetail/articleid/48543
+      \endverb
+    \endentry
+    \entry{mcclanahan_history_2010}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1f3300784d32984e9ecd83fc5a802b42}{%
+           family={{McClanahan}},
+           familyi={M\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1f3300784d32984e9ecd83fc5a802b42}
+      \strng{fullhash}{1f3300784d32984e9ecd83fc5a802b42}
+      \strng{bibnamehash}{1f3300784d32984e9ecd83fc5a802b42}
+      \strng{authorbibnamehash}{1f3300784d32984e9ecd83fc5a802b42}
+      \strng{authornamehash}{1f3300784d32984e9ecd83fc5a802b42}
+      \strng{authorfullhash}{1f3300784d32984e9ecd83fc5a802b42}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{History and Evolution of {GPU} Architecture}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{pages}{7}
+      \range{pages}{1}
+      \verb{file}
+      \verb McClanahan - History and Evolution of GPU Architecture.pdf:C\:\\Users\\Ruili\\Zotero\\storage\\XXE8GQKM\\McClanahan - History and Evolution of GPU Architecture.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{nvidia_cuda_2017}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2a21e2561359ebf2fb2d634ee7837a8e}{%
+           family={Nvidia},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{fullhash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{bibnamehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{authorbibnamehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{authornamehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{authorfullhash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{CUDA} Zone {CUDA}® is a parallel computing platform and programming model developed by {NVIDIA} for general computing on graphical processing units ({GPUs}). With {CUDA}, developers are able to dramatically speed up computing applications by harnessing the power of {GPUs}. In {GPU}-accelerated applications, the sequential part of the workload runs on the {CPU} – which is optimized for single-threaded performance – while the compute intensive portion of the application runs on thousands of {GPU} cores in parallel.}
+      \field{day}{18}
+      \field{langid}{american}
+      \field{month}{7}
+      \field{title}{{CUDA} Zone}
+      \field{titleaddon}{{NVIDIA} Developer}
+      \field{urlday}{19}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Ruili\\Zotero\\storage\\YYSHPDRX\\cuda-zone.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://developer.nvidia.com/cuda-zone
+      \endverb
+      \verb{url}
+      \verb https://developer.nvidia.com/cuda-zone
+      \endverb
+    \endentry
+    \entry{nvidia_nvidia_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2a21e2561359ebf2fb2d634ee7837a8e}{%
+           family={Nvidia},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{fullhash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{bibnamehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{authorbibnamehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{authornamehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{authorfullhash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A staggering 24 {GB} of G6X memory, all to deliver the ultimate gaming experience}
+      \field{langid}{english}
+      \field{title}{{NVIDIA} {GeForce} {RTX} 3090 Graphics Card}
+      \field{urlday}{19}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Ruili\\Zotero\\storage\\QM25CTKS\\rtx-3090.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3090/
+      \endverb
+      \verb{url}
+      \verb https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3090/
+      \endverb
+    \endentry
+    \entry{micron_technology_inc_ram_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0640dc253698dcd1477c1902872dfcef}{%
+           family={Micron\bibnamedelima Technology},
+           familyi={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Inc.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0640dc253698dcd1477c1902872dfcef}
+      \strng{fullhash}{0640dc253698dcd1477c1902872dfcef}
+      \strng{bibnamehash}{0640dc253698dcd1477c1902872dfcef}
+      \strng{authorbibnamehash}{0640dc253698dcd1477c1902872dfcef}
+      \strng{authornamehash}{0640dc253698dcd1477c1902872dfcef}
+      \strng{authorfullhash}{0640dc253698dcd1477c1902872dfcef}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Better understand your computer's {RAM} speeds \& the compatibility of different types of memory to work out how to get the most from your desktop or laptop.}
+      \field{langid}{english}
+      \field{title}{{RAM} Memory Speeds \& Compatibility {|} Crucial.com}
+      \field{titleaddon}{Crucial}
+      \field{urlday}{19}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Ruili\\Zotero\\storage\\69GCPW72\\memory-speeds-compatability.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.crucial.com/support/memory-speeds-compatability
+      \endverb
+      \verb{url}
+      \verb https://www.crucial.com/support/memory-speeds-compatability
+      \endverb
+    \endentry
+    \entry{nvidia_cuda_2020}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2a21e2561359ebf2fb2d634ee7837a8e}{%
+           family={Nvidia},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{fullhash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{bibnamehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{authorbibnamehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{authornamehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{authorfullhash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \field{extraname}{3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The new {NVIDIA} A100 {GPU} based on the {NVIDIA} Ampere {GPU} architecture delivers the greatest generational leap in accelerated computing. The A100 {GPU} has revolutionary hardware capabilities and we’re…}
+      \field{day}{14}
+      \field{langid}{american}
+      \field{month}{5}
+      \field{title}{{CUDA} 11 Features Revealed}
+      \field{titleaddon}{{NVIDIA} Developer Blog}
+      \field{urlday}{15}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Ruili\\Zotero\\storage\\XRBAQF8T\\cuda-11-features-revealed.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://developer.nvidia.com/blog/cuda-11-features-revealed/
+      \endverb
+      \verb{url}
+      \verb https://developer.nvidia.com/blog/cuda-11-features-revealed/
+      \endverb
+    \endentry
+    \entry{nvidia_cuda_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2a21e2561359ebf2fb2d634ee7837a8e}{%
+           family={Nvidia},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{fullhash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{bibnamehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{authorbibnamehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{authornamehash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \strng{authorfullhash}{2a21e2561359ebf2fb2d634ee7837a8e}
+      \field{extraname}{4}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The programming guide to the {CUDA} model and interface.}
+      \field{langid}{english}
+      \field{note}{Archive Location: Programming Guides}
+      \field{title}{{CUDA} C++ Programming Guide}
+      \field{type}{documentation}
+      \field{urlday}{22}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Ruili\\Zotero\\storage\\4JABJCS2\\index.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html
+      \endverb
+      \verb{url}
+      \verb https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
