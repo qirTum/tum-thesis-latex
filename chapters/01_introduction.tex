@@ -3,21 +3,42 @@
 
 \chapter{Introduction}\label{chapter:introduction}
 
-\section{Background and Motivation}
+\section{Motivation}
 
+Moore's law, based on the paper that Gordon E. Moore wrote in 1965, predicted that the number of transistors in a dense integrated circuit would double every two years. [cite] Robert H. Dennard made the observation that a transistor's power use stays in proportion with the size of said transistor. [cite] These two observations are the current foundation of the computing ecosystem, where transistor sizes are constantly shrinking and computational capacities are constantly growing. However, this is set to end soon as transistor sizes are approaching atomic scale in the next few years.[cite]  Even now, this end is fast approaching as TSMC, a chip foundry based in Taiwan, has plans to start volume production of its 3nm technology as early as the second half of 2022. [cite] As such, there will be, and already has been to some degree, a paradigm shift away from general-purpose processing units and towards more specialized architectures to maintain performance improvements. On the one hand, this has lead to heterogeneous computing and increased parallelism. On the other hand, this also leads to data movements becoming increasingly frequent and costly, compared to the operations on said data. [cite] A predictable result is that data transfers, and the interconnects in heterogeneous systems, will soon become the bottleneck for computation speeds. As such, it is increasingly important to gain insight into the data movements in heterogeneous systems to optimize both current and future software.
+
+[TODO: DEEP-SEA project?]
 \section{Goals and Aims}
 
-- develop lightweight tool that has few requirements to gain insight to data movements in a PCIe link
+The goal of this thesis is to gain insight to data movements in a heterogeneous system. To be more specific, the data movements over a PCIe bus in a heterogeneous system. This is done by developing a tool, or a set of tools, to monitor the PCIe link in a heterogeneous system. To be more specific, the tool(s) should meet a set of requirements, listed below: 
+\begin{itemize}
+\item lightweight
+\item automated
+\item as few requirements as possible
+\item low overhead
+\item no need to modify existing programs
+\item should gain insight to PCIe link activity
+\end{itemize}
 
-\section{Delimitation}
-
-- Heterogeneous systems have many different interconnects
-- Focus on PCIE-interface in this thesis
-- (why)? not sure yet, figure something out
+[todo: elaborate on requirements]
 
 \section{Structure and Approach}
 
-- three approaches / benchmarks
-- bandwidth: for measuring the raw bandwidth capacity of the system
-- nvml: for measuring pcie link activity
-- copy: for measuring pcie link activity
+The introduction should first explain the primary motivation of the thesis, with a brief mention to the DEEP-SEA project being made. Then, the goals and aims of the thesis are to be defined in further detail, along with a set of requirements for the tool being developed. The introduction closes with a brief description of the structure and approach of this thesis, as described in this section.
+
+The next chapter should briefly introduce the concept of High-performance computing (HPC), graphics processing units (GPUs), NVIDIA's CUDA API, and the Peripheral Component Interconnect Express (PCIe) architecture. Chapter 2 should act as a foundation for the remainder of this thesis and introduce most of the concepts mentioned in future chapters.
+
+[TODO: more here as chapters 3,4,5 are finalized]
+\begin{itemize}
+	\item - three approaches / benchmarks
+	\item - bandwidth: for measuring the raw bandwidth capacity of the system
+	\item - nvml: for measuring pcie link activity
+	\item - copy: for measuring pcie link activity
+	\item - further reading and discussion 
+\end{itemize}
+
+Chapter 6 contains a comparative and evaluating discussion of the tools developed in chapters 3, 4, and 5. Additionally, similar papers and approaches will be briefly touched upon to both give a brief insight into the state-of-the-art and to serve as a target for evaluation purposes.
+
+Chapter 7 summarizes the contents of this thesis and gives an outlook for further development and research.
+
+

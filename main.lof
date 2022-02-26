@@ -2,10 +2,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces An example of a PCI-Express packet ~\blx@tocontentsinit {0}\parencite {lawley_understanding_2014}\relax }}{3}{figure.caption.6}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces An example of a memory request header ~\blx@tocontentsinit {0}\parencite {lawley_understanding_2014}\relax }}{4}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces PCIe configuration on an Intel-based system\blx@tocontentsinit {0}\cite {nakamura_thorough_2017}\relax }}{6}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces An example PCIe link between two devices \blx@tocontentsinit {0}\cite {budruk_pci_2014}\relax }}{7}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces An example of a PCI-Express packet ~\blx@tocontentsinit {0}\parencite {lawley_understanding_2014}\relax }}{7}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces An example of a memory request header ~\blx@tocontentsinit {0}\parencite {lawley_understanding_2014}\relax }}{8}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces PCIe configuration on an Intel-based system\blx@tocontentsinit {0}\cite {nakamura_thorough_2017}\relax }}{10}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces An example PCIe link between two devices \blx@tocontentsinit {0}\cite {budruk_pci_2014}\relax }}{11}{figure.caption.25}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
