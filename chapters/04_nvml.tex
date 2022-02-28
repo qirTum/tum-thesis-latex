@@ -4,28 +4,38 @@
 \chapter{NVML Counters}\label{chapter:nvml}
 
 \section{Concept}
-- nvidia has hardware counters, accessible via nvml library
-- counters measure average bandwidth over the last 20ms, in kb/sec
-- Transmit and Receive have seperate counters
+
+\begin{itemize}
+	\item - nvidia has hardware counters, accessible via nvml library
+	\item - counters measure average bandwidth over the last 20ms, in kb/sec
+	\item - Transmit and Receive have seperate counters
+\end{itemize}
+
 
 \section{Implementation}
-- method call to read counters takes about 20ms
-- to increase data granularity and measurement consistency, measuring of TX and RX was done in parallel
+\begin{itemize}
+	\item - method call to read counters takes about 20ms
+	\item - to increase data granularity and measurement consistency, measuring of TX and RX was done in parallel
+\end{itemize}
 
 
 
 \section{Results}
 
-- graphs
+- graphs and discussing the graphs
 
 \section{Discussion}
 
 \subsection{successes}
-
-- measures bandwidths accurately to some degree
-- introduces little overhead (probably, still to be measured)
-
+\begin{itemize}
+	\item - measures bandwidths accurately to some degree
+	\item - introduces little overhead (probably, still to be measured)
+	\item - does not require any modifications to software
+\end{itemize}
 
 \subsection{shortcomings}
-- granularity of method calls prevent more accurate readings -> short memory transfers may be not detected
-- black box approach of nvidia's source code doesn't allow for proper sanity-checking
+\begin{itemize}
+	\item - granularity of method calls prevent more accurate readings -> short memory transfers may be not detected
+	\item - black box approach of nvidia's source code doesn't allow for proper sanity-checking
+	\item - for more accurate readings and measurements: timestamping of original program -> modification
+\end{itemize}

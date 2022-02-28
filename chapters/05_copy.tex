@@ -4,27 +4,38 @@
 \chapter{Link Saturation}\label{chapter:copy}
 
 \section{Concept}
-- if bandwidth is saturated, copy operations should slow down
-- full duplex, so HtoD and DtoH both need measuring
+\begin{itemize}
+	\item - if bandwidth is saturated, copy operations should slow down
+	\item - full duplex, so HtoD and DtoH both need measuring
+\end{itemize}
 
 \section{Implementation}
 
-- Started as a thread that just continuously monitored the counters for set duration of time and printed output into console
-- Added wrapper and file output in subsequent versions to simplify data-gathering
-- Added chunk size options for the buffer copy chunks to get as little overhead as possible while getting most consistent data gathering
-- Delays are measured, no clear correlation between delay and bandwidth
-- Overhead yet to be properly assessed, however, introduces somewhat significant overhead. TODO: ASSESS OVERHEAD
-- Measure transmit and receive in the same thread, sequentially
+\begin{itemize}
+	\item - Started as a thread that just continuously monitored the counters for set duration of time and printed output into console
+	\item - Added wrapper and file output in subsequent versions to simplify data-gathering
+	\item - Added chunk size options for the buffer copy chunks to get as little overhead as possible while getting most consistent data gathering
+	\item - Delays are measured, no clear correlation between delay and bandwidth
+	\item - Overhead yet to be properly assessed, however, introduces somewhat significant overhead. TODO: ASSESS OVERHEAD
+	\item - Measure transmit and receive in the same thread, sequentially
+\end{itemize}
+
 
 \section{Results}
 
-- graphs
+
+- graphs\\
 - descriptors of graphs
 
 \section{Discussion}
 
 \subsection{successes}
-- gives somewhat detailed going-on about PCIe link activities
+\begin{itemize}
+	\item - gives somewhat detailed going-on about PCIe link activities
+	\item - more accurate than nvml counters -> global discussion?
+\end{itemize}
 \subsection{shortcomings}
-- introduces some overhead due to occupying PCIe link
-- Delay compensation sometimes leads to negative values due to delay inconsistencies
+\begin{itemize}
+	\item - introduces significant overhead due to occupying PCIe link
+	\item - Delay compensation sometimes leads to negative values due to delay inconsistencies
+\end{itemize}

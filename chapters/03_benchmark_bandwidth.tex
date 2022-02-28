@@ -4,26 +4,46 @@
 \chapter{Bandwidth Benchmark}\label{chapter:benchmark}
 
 \section{Concept}
-- Measures raw theoretical maximum bandwidth of pcie link by measuring the duration of memory copies of various chunk sizes
-- Checks at which chunk sizes the bandwidth of the link is fully saturated
+\begin{itemize}
+	\item - Measures raw theoretical maximum bandwidth of pcie link by measuring the duration of memory copies of various chunk sizes
+	\item - Checks at which chunk sizes the bandwidth of the link is fully saturated
+	\item - goal: insight into very basics of pcie data transfer
+\end{itemize}
+
 
 \section{Implementation}
-- Compensates for delay - 1 packet with 4B measured as delay
-- Pageable and pinned memory benchmarks measured
-- Warmup-feature: first transfer usually has some sort of longer delay, compensates for that (windows-finding, verify on p6000)
+\begin{itemize}
+	\item - Compensates for delay / overhead - 1 packet with 4B measured as delay / overhead
+	\item - Pageable and pinned memory benchmarks measured
+	\item - Warmup-feature: first transfer usually has some sort of longer delay, compensates for that (windows-finding, verify on p6000)
+	
+	
+\end{itemize}
 
 \section{Results}
-- Transfer durations don’t really increase until 8kb
-- Due to the nature of the PCI-E packet having a max payload of 4kb
-- First transfer usually has a bit longer delay (warmup?)
-- On windows: not executable that calls functions, but rather nvcuda64.dll - requires compiling on windows and then using a profiling tool like AMDUprof to look at the program
+\begin{itemize}
+	\item - Transfer durations don’t really increase until 8kb
+	\item reason: the nature of the PCI-E packet having a max payload of 4kb
+	\item - First transfer usually has a bit longer delay (warmup?)
+	\item - On windows: not executable that calls functions, but rather nvcuda64.dll - requires compiling on windows and then using a profiling tool like AMDUprof to look at the program
+	\item - TODO: graphs
+\end{itemize}
+
 
 \section{Discussion}
 
 \subsection{successes}
-- gives accurate reading of pcie bandwidths 
-- non-linear scaling of packet transfer durations (2 packets does not equal double the duration of one packet)
+\begin{itemize}
+	\item - gives accurate reading of pcie bandwidths compared to theoretical maximum (gen3)
+	\item - non-linear scaling of packet transfer durations (2 packets does not equal double the duration of one packet) -> overhead per transfer
+\end{itemize}
 
 
 \subsection{shortcomings}
-- does not really compensate for other bottlenecks, as seen on time-x with gen4 link bandwidth speeds
+\begin{itemize}
+	\item - does not really compensate for other bottlenecks, as seen on time-x with gen4 link bandwidth speeds
+	\item - gives little to no insight on 'what is being transferred', and more along the lines of 'how much is theoretical max bandwidth'
+	\item - why warmup? not fully explained, further research needed
+	\item 
+\end{itemize}
+
